@@ -1,12 +1,9 @@
 *{
   padding: 0;
   margin: 0;
-  color: rgb(0, 0, 0)
-  
 }
 html,  body {
   background-color:#333;;    
-  
   overflow-x: hidden;
   
   }
@@ -20,7 +17,6 @@ img{
   border-top-right-radius:0px;
 }
 table {
-  
   padding: -100px;
   border-spacing: 20px;
   align-items: center;
@@ -28,25 +24,12 @@ table {
  margin-top:-10px;
   border: none;
   width: 500px;
- 
-  
-
-}
-
-.u{
-position:fixed ;
-width: 100%;
-background: rgb(51,51,51);
-background: linear-gradient(122deg, rgba(51,51,51,1) 33%, rgb(56, 153, 105) 34%,
- #00fc7e 100%);
- font-family: 'Poppins', sans-serif;
- font-size: medium;
 }
 .h{
 height: 12px;
  border-bottom-right-radius: 
  15px;
-      margin-left: -20px; 
+     margin-left: -20px; 
       margin-top: -5px; 
       margin-right: 60px;
       background: rgb(51,51,51);
@@ -143,20 +126,6 @@ li a {
 }
 
   
-  li a:hover:not(.active) {
-    background-color: #20FC8F;
-    color: #141414;
-    font-size: medium;
-    text-align: center;
-    border-radius: 15px ;
-  }
-  .ss:hover:not(.active) {
-    background-color: #333;
-    color: #ffffff;
-    font-size: medium;
-    text-align: center;
-    border-radius: 15px ;
-  }
   
   
   h2{
@@ -271,4 +240,74 @@ li a {
   margin-left: -100px;
   height: 200px;
   width: 200px;
+}
+.menu a:hover span:first-child {
+  transform: translateY(140%);
+}
+
+.menu a:hover span:last-child,
+.menu[data-animation] a:hover span:last-child {
+  transform: none;
+}
+.menu{
+  color: white;
+  position:fixed ;
+  width: 100%;
+  background: rgb(51,51,51);
+  background: linear-gradient(122deg, rgba(51,51,51,1) 33%, rgb(56, 153, 105) 34%,
+   #00fc7e 100%);
+   font-family: 'Poppins', sans-serif;
+   font-size: medium;
+   
+    
+  
+   
+}
+.menu a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+li a:hover:not(.active) {
+  background-color: #20FC8F;
+  color: #141414;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px ;
+  height: 24px;
+}
+.ss:hover:not(.active) {
+  background-color: #333;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px ;
+}
+span{
+  color:white;
+}
+.menu a span {
+  transition: transform 0.2s ease-out;
+}
+
+.menu a span:first-child {
+  display: inline-block;
+  padding: 0px;
+}
+
+.menu a span:last-child {
+  position: absolute;
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-110%);
+}
+i{
+  color: black;
+  
 }
