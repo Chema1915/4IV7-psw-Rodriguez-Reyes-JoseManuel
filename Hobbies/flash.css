@@ -68,6 +68,7 @@ width:100%;
     top: 0;
     font-family: 'Quicksand', sans-serif;
     border-bottom:rgb(255, 183, 0) .05vw solid;
+    z-index: 2;
   }
   li {
     float: left;
