@@ -26,6 +26,10 @@
   .container::-webkit-scrollbar-track:active {
     background: #d4d4d4;
   }
+  body{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+  }
   ul {
     list-style-type: none;
     margin: 0;
@@ -36,6 +40,8 @@
     position: sticky;
     top: 0;
     font-family: 'Quicksand', sans-serif;
+    z-index: 2;
+    
   }
   
   li {

@@ -1,6 +1,8 @@
 body{
     background-color: rgb(19, 19, 54);
     margin: 0;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
   }
   .bg{
     width:100%;
@@ -57,6 +59,8 @@ body{
       position: sticky;
       top: 0;
       font-family: 'Quicksand', sans-serif;
+      font-size:1.3vmax;
+      z-index: 2;
     }
     li {
       float: left;
@@ -98,6 +102,10 @@ body{
       font-size: 1em;
 }
 
+}
+p{
+  margin-left: 2vw;
+  font-size:2vw;
 }
 
     
