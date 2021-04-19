@@ -1,4 +1,5 @@
 /*
+
 vamos a crear una funcion que se encargue de validar
 que el usuario deba de escribir mas de 5 caracteres
 en el campo nombre

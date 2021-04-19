@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="css/problema8.css">
+    <script src="JS/problema08.js"></script>
+    <title>Problema 8</title>
+</head>
+<body>
+    <center ><p class="centro">
+        Leer tres números diferentes e imprimir el numero mayor de los tres.
+
+    </p></center>
+    <form name="formulario" method="POST" action="problema08.html"> 
+        <table align="center" border="1" >
+            <tr>
+                <td class="td_up" >Ingreseel primer numero</td>
+                <td class="td_down" > <input type="number" name="numero1"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese el segundo numero</td>
+                <td class="td_down" > <input type="number" name="numero2"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese el tercer numero</td>
+                <td class="td_down" > <input type="number" name="numero3"> </td>
+            </tr>
+           
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Calcular numero mayor"
+                    name="enviar" onclick="calcular()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >El numero mayor es:</td>
+                <td class="td_down"> <input type="text" name="ph"
+                    id="cantidadh" readonly="readonly" 
+                    class="input_number"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+        <br>
+    <center><a href="menuproblemas.html"><input type="button" class="button1" value="Menu Principal"></a></center>
+
+    </form>
+</body>
+</html>

@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <script Language="JavaScript" type="text/JavaScript" src="JS/validarformulario.js"></script>
+    <script language="JavaScript" type="text/JavaScript"
+    src="./JS/validarformulario.js" ></script>
 </head>
 <body>
-    <form method="POST" name="formulario" 
-    action="formulario.html" onsubmit="return validar(this)">
+
+    <form method="get" name="formulario"  
+    action="formulario.html" onsubmit="return validar(this)" >
+
     Nombre:
     <br>
     <input type="text" name="nombre" size="20">
@@ -22,11 +25,15 @@
     <br>
     <input type="text" name="email" size="30">
     <br>
-    <input type="submit" value="Enviar Datos" name="enviar">
+    <input type="submit" value="Enviar Datos" name="enviar" >
     <br>
-    <input type="reset" value="Borrar" name="borra">
+    <input type="reset" value="Borrar" name="borrar" >     
 
     </form>
+
+    <a href="index.html" >Regresar al menu principal</a>
+    <br>
+    <a href="problema01.html" >Problema 01 JS</a>
     
 </body>
 </html>

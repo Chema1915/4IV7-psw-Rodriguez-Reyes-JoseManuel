@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="css/problema3.css">
+    <script src="JS/problema03.js"></script>
+    <title>Problema 3</title>
+</head>
+<body>
+    <center ><p class="centro">
+        Una tienda ofrece un descuento del 15% sobre el total de la compra y un clietne desea saber cuanto debera pagar finalmente por su compra.
+    </p></center>
+    <form name="formulario" method="POST" action="problema03.html"> 
+        <table align="center" border="1";" >
+            <tr>
+                <td class="td_up" >Ingrese el total a pagar</td>
+                <td class="td_down" > <input type="number" name="precio"
+                > </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Calcular Precio"
+                    name="enviar" onclick="calcular()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >El costo final es de:</td>
+                <td class="td_down"> <input type="text" name="sueldoti"
+                    id="cantidadti" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+        <br>
+    <center><a href="menuproblemas.html"><input type="button" class="button1" value="Menu Principal"></a></center>
+
+
+
+
+    </form>
+    
+</body>
+</html>

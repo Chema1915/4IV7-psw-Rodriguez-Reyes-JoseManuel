@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="./css/problema2.css">
+    <script src="./JS/problema02.js" ></script>
+</head>
+<body>
+    <center ><p class="centro">
+        Un vendedor recibe un sueldo base mas un 10% extra por comisión de sus ventas, el vendedor desea saber cuanto dinero obtendrá  por concepto de comisiones por las tres ventas que realiza en el mes y el total que recibira en el mes tomando en cuenta su sueldo base y comisiones.
+
+    </p></center>
+    <form name="formulario" method="POST" action="problema02.html">
+        <table align="center" border="1";" >
+            <tr>
+                <td class="td_up" >Ingrese el Sueldo</td>
+                <td class="td_down" > <input type="number" name="cantidad"
+                > </td>
+            </tr>
+            <tr>
+                <td class="td_up">Ingrese la cantidad TOTAL de Todas sus ventas</td>
+                <td class="td_down"><input type="number" name="ventas" ></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Interes"
+                    name="enviar" onclick="calcular()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Su sueldo mensual total mas comisiones es  de:</td>
+                <td class="td_down"> <input type="text" name="sueldoti"
+                    id="cantidadti" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+        <br>
+        <center><a href="menuproblemas.html"><input type="button" class="button1" value="Menu Principal"></a></center>
+    
+
+
+    </form>
+</body>
+</html>

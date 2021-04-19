@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="css/problema9.css">
+    <script src="JS/problema09.js"></script>
+    <title>Problema 9</title>
+</head>
+<body>
+    <center ><p class="centro">
+        Determinar la cantidad de dinero qeu recibirá un trabajador por concepto de las horas extras trabajadas en una empresa, sabiendo que cuando las horas de trabajo exceden de 40, el resto se consideran horas extras y que estas se pagan al doble de una hora normal cuando no exceden de 8; si las horas extra exceden de 8 se paga las primeras 8 horas al doble y el resto al triple.
+
+    </p></center>
+    
+    <form name="formulario" method="POST" action="problema09.html">
+        <table align="center" border="1">
+            <tr>
+                <td class="td_up" >Introduce cuanto ganas por hora: </td>
+                <td class="td_down" > <input type="number" name="phrs"
+                 > </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Introduce el numero de horas que trabajas: </td>
+                <td class="td_down" > <input type="number" name="hrs"
+                > </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Calcular"
+                    name="enviar" onclick="calcular()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >El sueldo a pagar es:</td>
+                <td class="td_down"> <input type="text" name="ph"
+                    id="cantidad" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+    </form> 
+    <br>
+    <center><a href="menuproblemas.html"><input type="button" class="button1" value="Menu Principal"></a></center>
+
+</body>
+</html>

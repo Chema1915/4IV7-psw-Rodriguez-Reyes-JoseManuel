@@ -1,0 +1,37 @@
+.td_up{
+    align-items: left;
+    justify-content: left;
+    width: 100;
+    
+}
+.td_down{
+    align-items: center;
+    justify-content: center;
+    width: 150;
+}
+
+.input_text{
+    size: 12;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 10;
+    color: #101010;
+    letter-spacing: 3px;
+}
+
+*{
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+
+}
+table{
+    border: 2px solid #000;
+}
+.button1 {
+    background-color: rgb(55, 55, 192);
+    color: white;
+}
+.centro{
+    margin-top: 15%;
+}

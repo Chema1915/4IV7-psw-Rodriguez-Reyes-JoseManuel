@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="css/problema4.css">
+    <script src="JS/problema04.js"></script>
+    <title>Problema 4</title>
+</head>
+<body>
+    <center ><p class="centro">
+        Un alumno desea saber cual será su calificacion final en la materia de Algoritmos. Dicha calificación se compone de los siguientes porcentajes:<br>1. 55% del promedio de sus tres calificaciones parciales.<br> 2. 30% de la calificacion del examen final.<br>3. 15% de la calificacion de un trabajo final.
+
+    </p></center>
+    <form name="formulario" method="POST" action="problema04.html"> 
+        <table align="center" border="1";" >
+            <tr>
+                <td class="td_up" >Ingrese calificacion del primer parcial</td>
+                <td class="td_down" > <input type="number" name="primer"
+               > </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese calificacion del segundo parcial</td>
+                <td class="td_down" > <input type="number" name="segundo"
+               > </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese calificacion del tercer parcial</td>
+                <td class="td_down" > <input type="number" name="tercer"
+               > </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese calificacion del Examen Final</td>
+                <td class="td_down" > <input type="number" name="examen"
+               > </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese calificacion del Trabajo Final </td>
+                <td class="td_down" > <input type="number" name="trabajo"
+               > </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Calcular Calificacion "
+                    name="enviar" onclick="calcular()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Su calificacion Semestral es de:</td>
+                <td class="td_down"> <input type="text" name="cal"
+                    id="cantidadti" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+        <br>
+        <center><a href="menuproblemas.html"><input type="button" class="button1" value="Menu Principal"></a></center>
+    
+
+
+
+    </form>
+    
+</body>
+</html>

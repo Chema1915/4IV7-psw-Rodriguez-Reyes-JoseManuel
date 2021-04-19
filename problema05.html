@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="css/problema5.css">
+    <script src="JS/problema05.js"></script>
+    <title>Problema 5</title>
+</head>
+<body>
+    <center ><p class="centro">
+        Un maestro desea saber que porcentaje de hombres y que porcentaje de mujeres hay en un grupo de estudiantes.
+
+    </p></center>
+    <form name="formulario" method="POST" action="problema05.html"> 
+        <table align="center" border="1";" >
+            <tr>
+                <td class="td_up" >Ingrese la Cantidad total de Estudiantes</td>
+                <td class="td_down" > <input type="number" name="estudiantes"
+                > </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese la cantidad de Hombres</td>
+                <td class="td_down" > <input type="number" name="hombre"
+                > </td>
+            </tr>
+            <tr>
+                <td class="td_up" >Ingrese la Cantidad de Mujeres </td>
+                <td class="td_down" > <input type="number" name="mujer"
+                > </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" value="Calcular Porcentaje "
+                    name="enviar" onclick="calcular()"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >El Porcentaje de Hombres en Clase es:</td>
+                <td class="td_down"> <input type="text" name="ph"
+                    id="cantidadh" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+            <tr>
+                <td class="td_up" >El Porcentaje de mujeres en Clase es:</td>
+                <td class="td_down"> <input type="text" name="pm"
+                    id="cantidadm" readonly="readonly" 
+                    class="input_text"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"> <input type="button" name="borrard" 
+                    value="Borrar" onclick="borrar()"> </td>
+            </tr>
+        </table>
+        <br>
+        <center><a href="menuproblemas.html"><input type="button" class="button1" value="Menu Principal"></a></center>
+    
+
+
+
+    </form>
+    
+</body>
+</html>

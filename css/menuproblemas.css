@@ -1,0 +1,30 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;    
+}
+table{
+    margin-top: 5%;
+    margin-left: -2px;
+}
+td{
+    padding: 12px;
+
+    
+}
+
+.button1{
+    background-color: rgb(228, 228, 228);
+    
+}
+body{
+    background-color: rgb(21, 55, 130);
+}
+h1{
+    font-size: 3rem;
+    margin-top: 5%;
+    color: white;
+}
+p{
+    color: white;
+    font-size: 2rem;
+}
