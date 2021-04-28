@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+              initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Registros.css">
+        <script>
+window.onload = function() {
+  var myInput = document.getElementById('bloquear');
+  myInput.onpaste = function(e) {
+    e.preventDefault();
+   
+  };
+
+  myInput.oncopy = function(e) {
+    e.preventDefault();
+   
+  };
+}
+
+ 
+</script>
+    </head>
+    <body ondragstart="return false"  oncontextmenu="return false" id="bloquear" class="body" >
+        
+    <center><h1>-Registro de Datos-</h1><div class="principal">
+            <center><div class="p">
+            <center><div class="a">
+    <center><div class="container" >
+            <form name="formulario" method="post"  
+                  action="Registro"  >
+                <label>Nombre:</label>
+                <input type="text" name="nombre" autocomplete="off"   required  onkeypress="return (event.charCode == 32  || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" >
+                <br>
+                <label>Apellido Paterno:</label>
+                <input type="text" name="appat" autocomplete="off" required  onkeypress="return (event.charCode == 32  || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" >
+                <br>
+                <label>Apellido Materno:</label>
+                <input type="text" name="appmat" autocomplete="off" required   onkeypress="return (event.charCode == 32  || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" >
+                <br>
+                <label>Edad:</label>
+                <input type="number" name="edad" min="01" max="99" 
+                       size="2" autocomplete="off" required  onkeypress="return(event.charCode >= 48 && event.charCode <= 57)"  >
+                <br>
+                <label>Correo:</label>
+                <input type="email" name="email" required  autocomplete="off">
+                <br>
+                <input type="submit" value="Enviar Datos de Registro" class="button">
+                <input type="reset" value="Borrar Registro" class="button">
+            </form>
+        </div></center>
+        <br>
+        <div class="contendorConsultar">
+            <br>
+            <form method="get" name="formularioconsultar" action="Consultar">
+                <input type="submit" value="Consultar Tabla General de Usuarios" class="buttons">
+            </form>
+        </div>
+        <br>
+        <div class="contenedorEliminar" >
+            <br>
+            <form method="post" name="formularioeliminar" action="Eliminar">
+                <label>Ingresa el ID del usuario que deseas eliminar</label>
+                <input type="number" class="button" autocomplete="off" required name="ideliminar" onkeypress="return(event.charCode >= 48 && event.charCode <= 57)"  >
+                <input type="submit" value="Eliminar Usuario" class="button" >
+            </form>
+        </div>
+        <br>
+        <div class="contenedorActualizar" >
+            <form method="post" name="formularioeditar" action="Editar">
+                <label>Ingresa el ID del usuario que deseas editar</label>
+                <input type="number"  autocomplete="off"  required name="ideditar" onkeypress="return(event.charCode >= 48 && event.charCode <= 57)" >
+                <input type="submit" value="Editar Usuario"class="button" >
+            </form>
+        </div>
+        </div></center>
+        </div></center>
+      </div></center>
+    </body>
+</html>
